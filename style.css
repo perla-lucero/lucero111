@@ -10,6 +10,7 @@ body {
     color: #003366;
 }
 
+/* --- Encabezado --- */
 header {
     background-color: #004c99;
     color: white;
@@ -39,6 +40,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* --- Secciones --- */
 .seccion {
     padding: 30px;
     background-color: white;
@@ -48,6 +50,7 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* --- Formularios --- */
 form {
     display: flex;
     flex-direction: column;
@@ -75,10 +78,11 @@ button:hover {
     background-color: #0066cc;
 }
 
+/* --- Tablas --- */
 table {
     margin: 20px auto;
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
 }
 
 th, td {
@@ -89,6 +93,97 @@ th, td {
 
 th {
     background-color: #e6f0ff;
+}
+
+/* --- Recordatorios --- */
+.recordatorios {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e6f0ff;
+    border: 1px solid #004c99;
+    border-radius: 10px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recordatorio {
+    background-color: #fff;
+    border-left: 5px solid #004c99;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.recordatorio h5 {
+    margin-bottom: 5px;
+}
+
+.recordatorio p {
+    margin: 0;
+    color: #003366;
+}
+
+/* --- Login --- */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #004c99, #0099ff);
+    color: white;
+}
+
+.login-container {
+    background-color: white;
+    color: #004c99;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 320px;
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.login-container h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-container input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    background-color: #004c99;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #0066cc;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 footer {
