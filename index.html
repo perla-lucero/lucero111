@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro - Psicología Chongoyape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Centro de Salud de Chongoyape</h1>
+        <h2>Área de Psicología</h2>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="seccion">
+        <h3>Desarrollo de un Sistema de Control de Registro de Pacientes</h3>
+        <p>Este proyecto busca mejorar la gestión del área de Psicología del Centro de Salud de Chongoyape, optimizando el control de pacientes, evitando duplicidades y facilitando el seguimiento terapéutico.</p>
+    </section>
+
+    <section id="objetivos" class="seccion">
+        <h3>Objetivos del Proyecto</h3>
+        <ul>
+            <li>Implementar un sistema digital de registro de pacientes.</li>
+            <li>Centralizar la información en una base de datos organizada.</li>
+            <li>Facilitar el seguimiento terapéutico y la generación de reportes.</li>
+            <li>Optimizar la atención psicológica y la toma de decisiones.</li>
+        </ul>
+    </section>
+
+    <section id="registro" class="seccion">
+        <h3>Registro de Pacientes</h3>
+        <form id="formRegistro">
+            <label>Nombre del Paciente:</label>
+            <input type="text" id="nombre" required>
+
+            <label>Edad:</label>
+            <input type="number" id="edad" required>
+
+            <label>Motivo de consulta:</label>
+            <input type="text" id="motivo" required>
+
+            <label>Diagnóstico:</label>
+            <input type="text" id="diagnostico">
+
+            <button type="submit">Registrar</button>
+        </form>
+
+        <h4>Pacientes Registrados</h4>
+        <table id="tablaPacientes">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Motivo</th>
+                    <th>Diagnóstico</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section id="contacto" class="seccion">
+        <h3>Contacto</h3>
+        <p>Centro de Salud de Chongoyape - Área de Psicología</p>
+        <p>Email: psicologia@chongoyape.gob.pe</p>
+        <p>Teléfono: (074) 456-789</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Centro de Salud de Chongoyape - Sistema de Psicología</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
